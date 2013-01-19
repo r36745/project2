@@ -17,7 +17,7 @@ var walletFull = true;
 
 
 //  Procedure
-
+// Take son to park and see if he has a good time
 function haveFun(reaction) {
     if (reaction == "smile") {
         console.log("had fun");
