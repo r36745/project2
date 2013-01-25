@@ -74,10 +74,10 @@ var assignment = {
     getInstruction: function () {
         var hw = getAssignmentNumber;
         
-        return " HomeWork Instructions ";
+        return "HomeWork Instructions";
     }
     createFlowChart: function () {
-        console.log("therherer");
+        console.log("");
     }
     createStory: function () {
         return " The story I've wrote, is a detailed account of the steps, to complete a flow chart project.";
@@ -106,7 +106,18 @@ var assignment = {
         
     }
     
-};
+}
+
+assignment.setAssignment();
+console.log("The project has started " + assignment.startAssignment());
+console.log("The projects instructions are: " = assignment.getInstructions ());
+assignment.createFlowChart();
+console.log("Project sourcecode:\n" + assignment.writeCode());
+console.log("Running the project. The project ran successful:" + assignment.runAssignment());
+assignment.turnInAssignment();
+console.log("The project requirements are:\n" + displayAssignment);
+console.log("The grade for this project was:" + getGrade();
+console.log("The grades for all the project so far are:" + getGrades);
 
 
 
