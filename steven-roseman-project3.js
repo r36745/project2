@@ -1,7 +1,15 @@
+var hwName = "";
+var hwNumber = 3;
+var projectGraded = "";
+var req = {};
+
+
+
 var assignment = {
-    name: "Project 3",
+    name: "",
     assignmentNumber: 3,
-    grade: "A",
+    grade: "",
+    graded: "",
     Requirements: [
         "code",
         "story",
@@ -31,39 +39,75 @@ var assignment = {
     setGrade: function (finalGrade) {
         this.grade=finalGrade;
     },
+    getGraded: function () {
+        return this.graded;
+    },
+    setGraded: function (isGraded) {
+        this.graded=isGraded;
+    },
     
     startAssignment: function () {
-        
+        return this.graded;
     var hw = getAssignmentNumber;
        
-    if ( hw === 1) {
-        "setAssignNumber";
-    },
-    if ( hw === 2 ) {
-        "setAssignmentNumber";
-    },
-    if ( hw === 3 ) {
-        "Turn in Project";
+        if ( hw === 1) {
+        setAssignmentName("Project 1");
+        // setRequirements()
+        setGrade("A");
+        setGraded("True");
+        return true;
+    } else if ( hw === 2 ) {
+        setAssignmentName ("Project 1");
+        // setReuquirements()
+        setGrade("A");
+        setGraded("True");
+        return true;
+    } else if ( hw === 3 ) {
+        setAssignmentName ("Project 1");
+        // setRequirements()
+        setGrade("A");
+        setGraded("True");
+        return true;
     } else {
-        "look again"
+        return false;
+    }
+    getInstruction: function () {
+        var hw = getAssignmentNumber;
+        
+        return " HomeWork Instructions ";
+    }
+    createFlowChart: function () {
+        console.log("therherer");
+    }
+    createStory: function () {
+        return " The story I've wrote, is a detailed account of the steps, to complete a flow chart project.";
+    }
+    writeCode: function () {
+        return "My Code";
+    }
+    debugCode: function () {
+        var successful = true;
+        return successful;
+    }
+    runAssignment: function () {
+        var codeCorrect = true;
+        return codeCorrect;
+    }
+    turnAssignmentIn: function () {
+        console.log("The Project is running");
+    }
+    displayAssignment() {
+        // details here
+        return {}
+    }
+    getGrades: function() {
+        // details here
+        return []
+        
+    }
+    
 };
 
-assignment.setAssignmentNumber(6);
-assignment.setAssignmentName("Last Project");
-assignment.setRequirements("code, Story on Project 3, Hopefully followed requirements");
-assignment.setGrade("A");
-
-
-var test = assignment.getAssignmentNumber();
-var newTest = assignment.getAssignmentName();
-var nextTest = assignment.getRequirements();
-var finalTest = assignment.getGrade();
-
-
-console.log(test);
-console.log(newTest);
-console.log(nextTest);
-console.log(finalTest);
 
 
 
