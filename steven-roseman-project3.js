@@ -2,6 +2,10 @@
 // Project 3
 // Create Flow Chart
 
+//myVariables
+
+
+
 
 // In Jamaica my wife and I stayed at a beautiful bed and breakfast hotel; that was on the cliffs, our hotel room was 40 ft from the water.
 
@@ -35,7 +39,7 @@ var hotel = {
                 },
                 setName: function (hotelName) {
                     this.name = hotelName;
-
+                },
                 
                 // Procedure
                 
@@ -49,28 +53,26 @@ var hotel = {
                     
                 },
                        
-      // Function
+                // Function
+                // Nested Loop
                 
-                getAmenities: function() {
-                    return this.amenities;
-                },
-                setHotelAmenities: function(roomService) {
-                    if (roomService == "Delicious" || roomService == "just right") { 
-                    
-                        } else if (roomService == "oneMore" && roomService == "the best") {
-                        } else {
-                         }
-                         this.amenities = roomService;
-                }
-                            
-                        
-                               
+                hotelAmenities: function (roomService, rightAmount, excellentCustService) {
+                    for (i = roomService; i <= rightAmount; i++) {
+                        console.log("I'll have the Jerk lobster, please");
+                        for (j = roomService; j <= excellentCustService; j++) {
+                        console.log("I've never had jerk lobster before, this taste fabulous! My compliments to " + hotel.employees[0]);
+                        }
+                    }        
+                }       
+                 
+                //
+                
+                
 }
 
-hotel.setHotelAmenities("Delicious", "just right");
-console.log(hotel.getHotelAmenities);
 
 hotel.roomQuality("Superior Room");
+hotel.hotelAmenities(0,5,5);
 
 
 
