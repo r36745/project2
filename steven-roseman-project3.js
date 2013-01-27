@@ -99,12 +99,28 @@ var hotel = {
 		console.log(attractionList[attractionNumber]); // prints the car at index i
 		attractionNumber++;
                     }
+                },
+                
+                //
+                
+                
+                myWifeHadFun: function (noHugs, noKisses) {
+                    if (noHugs != "love" && noKisses != "smooch") {
+                        return false;
+                    } else {
+                        return true;
+                    }
                 }
-                
-                
 }
 
 
+function printAddress(hotelAddress) {
+    return (hotelAddress.street + " " + hotelAddress.city + " " + hotelAddress.country);
+}
+
+
+console.log(hotel.name + " is a first class bed and breakfast, and they offer " + hotel.amenities);
+console.log(hotel.name + " is located at " + printAddress(hotel.address));
 hotel.roomQuality("Superior Room");
 hotel.hotelAmenities(0,5,5);
 console.log("32 degrees Celsius is Jamaica water temp " + hotel.beachWaterTemp(32,"c") + " degrees Fahrenheit");	// using the function and printing its output
@@ -113,8 +129,8 @@ console.log("150 degrees Fahrenheit is " +  hotel.beachWaterTemp(100, 'x') + " d
 
 console.log("This is the print of Negril attractions; you requested:");
 
-hotel.printJamaicaAtrractions(attractions); // just prints out cars2 array
-
+hotel.printJamaicaAttractions(attractions); // just prints out Attractions array
+hotel.myWifeHadFun("love", "smooch");
 
 
 
