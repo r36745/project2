@@ -26,3 +26,67 @@ function numberString( phoneNumber ){
 	}
 }
 numberString("704-569-4225");
+
+
+// Does a string follow an aaa@bbb.ccc pattern like an email address?
+
+function emailString( emailAddress) {
+        
+    var atPosition = emailAddress.indexOf("@");
+    var dotPosition = emailAddress.lastIndexOf(".");
+    
+    
+    
+    if (( atPosition == 3) && ( dotPosition == 7 )) {
+        console.log("1st part");
+        for (i = 0; i <= atPosition; i++) {
+        console.log("2nd part");
+        }
+        for (j = 0; j <= dotPosition; j++) {
+        console.log("3rd part");
+        }
+            if ((emailAddress.substring(0,4)==3) || (emailAddress.substring(5,8))) {
+                console.log("4th part");
+                return true;  // returns true if @ is in the third position
+            }else {
+                return false;  // returns false if "." is in wrong position
+                }
+               } else {
+                    return false;  // substring pulls from 0-4 and 5-8, if "@" or "." is not in substring, returns false
+    }   
+}
+emailString("dee@see.com");
+
+
+// Number Function
+
+function moveDecimal(num,decimalPosition){
+ return  (Math.round(num  * Math.pow(10,decimalPosition)) / Math.pow(10, decimalPosition)).toFixed(decimalPosition); // returned decimal after third place
+}
+moveDecimal(3.14159,3);
+
+
+
+
+
+
+
+
+
+var things = new Array (1, "pickles", 3, "onions", 5, "10", 6, "SDI");
+
+function totalThings(thingArray) {
+
+var total = 0;
+
+
+for (i = 0; i < thingArray.length; i++) {
+    console.log("is it here");
+    if (typeof(things[i])=="number") {
+    console.log("what about here");
+    total += thingArray[i];
+    }
+    }
+    return total;
+} 
+totalThings(things);
