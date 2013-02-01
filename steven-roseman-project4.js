@@ -91,5 +91,35 @@ for (i = 0; i < thingArray.length; i++) {
 } 
 totalThings(things);
 
+// String Function
+
+function numberStringrConvert(num) {
+    return Number(num);
+}
+Number("62");
+
+// Array Function: Smallest value in an array
+
+
+
+
+var multiNum = new Array (1, 4, 7, 9, 10, 14, 15);
+
+function allNum(lowNum, secNum ) {
+var nextHighNum = 0;
+
+
+    for (i = 0; i < allNum.length; i++) {
+        if (multiNum[i] > multiNum ) {
+            nextHighNum = multiNum;
+        }
+    }
+    return nextHighNum;
+}
+allNum(multiNum, 12);
+
+
+
+
 
 
