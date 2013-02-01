@@ -90,3 +90,18 @@ for (i = 0; i < thingArray.length; i++) {
     return total;
 } 
 totalThings(things);
+
+
+// String Function
+
+function number(strNumber) {
+var num = 42
+    if (strNumber == num) {
+        console.log("function work");
+        return 42; // Return a number
+    } else {
+        return "it's a string";
+        }
+}
+number("42");
+
