@@ -103,23 +103,19 @@ Number("62");
 
 
 
+
 var multiNum = new Array (1, 4, 7, 9, 10, 14, 15);
+function allNum(numArray, numValue){
 
-function allNum(lowNum, secNum ) {
-var nextHighNum = 0;
+	var nextHighNum = 0;
 
-
-    for (i = 0; i < allNum.length; i++) {
-        if (multiNum[i] > multiNum ) {
-            nextHighNum = multiNum;
-        }
-    }
-    return nextHighNum;
+	for ( var i = 0; i < numArray.length;i++){
+		if (numArray[i] > numValue){
+			nextHighNum = numArray[i];
+		}
+		
+		}
+	return nextHighNum;
 }
-allNum(multiNum, 12);
-
-
-
-
-
+allNum(multiNum, 14);
 
